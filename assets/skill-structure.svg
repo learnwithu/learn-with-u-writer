@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 620" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b9c1a"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+
+  <text x="460" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2937">这不是一条 prompt，是一个系统</text>
+
+  <!-- 三层主体 -->
+  <!-- 第一层 主文件 -->
+  <rect x="110" y="70" width="440" height="110" rx="12" fill="#f0f9e0" stroke="#8fc31f" stroke-width="2.5"/>
+  <text x="330" y="102" text-anchor="middle" font-size="18" font-weight="700" fill="#3f5e0c">第一层 · 主文件</text>
+  <text x="330" y="128" text-anchor="middle" font-size="13" fill="#4b5563">写作原则 10 条 · 协作流程 · 禁区</text>
+  <text x="330" y="150" text-anchor="middle" font-size="13" fill="#4b5563">材料闸：动笔前数素材，不够就问 / 查 / 写短</text>
+
+  <!-- 第二层 声音库 -->
+  <rect x="110" y="210" width="440" height="110" rx="12" fill="#f0f9e0" stroke="#8fc31f" stroke-width="2.5"/>
+  <text x="330" y="242" text-anchor="middle" font-size="18" font-weight="700" fill="#3f5e0c">第二层 · 声音库</text>
+  <text x="330" y="268" text-anchor="middle" font-size="13" fill="#4b5563">从你的标杆文章提取的语言指纹</text>
+  <text x="330" y="290" text-anchor="middle" font-size="13" fill="#4b5563">节奏习惯 · 口癖词库 · 从不使用的词</text>
+
+  <!-- 第三层 进化机制 -->
+  <rect x="110" y="350" width="440" height="110" rx="12" fill="#f0f9e0" stroke="#8fc31f" stroke-width="2.5"/>
+  <text x="330" y="382" text-anchor="middle" font-size="18" font-weight="700" fill="#3f5e0c">第三层 · 进化机制</text>
+  <text x="330" y="408" text-anchor="middle" font-size="13" fill="#4b5563">你改稿 → AI 对比初稿与终稿</text>
+  <text x="330" y="430" text-anchor="middle" font-size="13" fill="#4b5563">提取反复出现的规律 → 回写 skill</text>
+
+  <!-- 层间箭头 -->
+  <line x1="330" y1="180" x2="330" y2="208" stroke="#6b9c1a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="330" y1="320" x2="330" y2="348" stroke="#6b9c1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 右侧循环：越用越像你 -->
+  <path d="M 550 125 C 640 90, 640 430, 552 398" fill="none" stroke="#6b9c1a" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+  <text x="688" y="240" text-anchor="middle" font-size="15" font-weight="700" fill="#6b9c1a">越用</text>
+  <text x="688" y="264" text-anchor="middle" font-size="15" font-weight="700" fill="#6b9c1a">越像你</text>
+  <text x="688" y="290" text-anchor="middle" font-size="12" fill="#6b7280">每改一次稿</text>
+  <text x="688" y="310" text-anchor="middle" font-size="12" fill="#6b7280">它就更准一分</text>
+
+  <!-- 两道闸 -->
+  <text x="460" y="510" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">写作全程的两道闸</text>
+
+  <rect x="130" y="530" width="300" height="64" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="280" y="556" text-anchor="middle" font-size="14" font-weight="700" fill="#374151">材料闸（动笔前）</text>
+  <text x="280" y="578" text-anchor="middle" font-size="12" fill="#6b7280">宁交 800 字实文，不交 2000 字注水</text>
+
+  <rect x="490" y="530" width="300" height="64" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="640" y="556" text-anchor="middle" font-size="14" font-weight="700" fill="#374151">检查脚本（交稿前）</text>
+  <text x="640" y="578" text-anchor="middle" font-size="12" fill="#6b7280">python3 check_prose.py，硬违例清零</text>
+
+  <!-- 闸与主体的连接示意 -->
+  <line x1="280" y1="530" x2="280" y2="500" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrowGray)"/>
+  <line x1="640" y1="530" x2="640" y2="500" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrowGray)"/>
+</svg>
